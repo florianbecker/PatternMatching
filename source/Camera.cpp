@@ -63,6 +63,9 @@ namespace vx {
   /** Factor from seconds to milliseconds */
   constexpr int secondsToMilliseconds = 1000;
 
+  /** Exposure time in milliseconds */
+  constexpr double exposureTimeMilliseconds = 1000.0;
+
   Camera::Camera( PatternMatching *_patternMatching )
     : m_patternMatching( _patternMatching ) {
 
@@ -116,7 +119,7 @@ namespace vx {
 
     /* Disable Exposure Auto by setting the operating mode to Continuous */
     camera.ExposureAuto.SetValue( ExposureAuto_Off );
-    camera.ExposureTime.SetValue( 1000.0, true );
+    camera.ExposureTime.SetValue( exposureTimeMilliseconds, true );
 
     /* Disable Gain Auto by setting the operating mode to Continuous */
     camera.GainAuto.SetValue( GainAuto_Off );

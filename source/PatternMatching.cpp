@@ -40,6 +40,9 @@
 
 namespace vx {
 
+  constexpr int defaultX = 640;
+  constexpr int defaultY = 480;
+
   PatternMatching::PatternMatching( QWidget *parent )
     : QWidget( parent ) {
 
@@ -48,7 +51,7 @@ namespace vx {
     m_txtStream = new QLabel( this );
     verticalLayout->addWidget( m_txtStream );
 
-    resize( QSize( 640, 480 ) );
+    resize( QSize( defaultX, defaultY ) );
 
     show();
   }
