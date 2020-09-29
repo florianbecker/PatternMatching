@@ -35,9 +35,9 @@
 #include <thread>
 
 /**
- * @brief VX (VX Apps) Namespace.
+ * @brief vx (VX Apps) namespace.
  */
-namespace VX {
+namespace vx {
 
   /**
    * @brief Timing class for timeouts.

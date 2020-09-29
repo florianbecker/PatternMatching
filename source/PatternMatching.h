@@ -37,9 +37,9 @@
 class QLabel;
 
 /**
- * @brief VX (VX Apps) Namespace.
+ * @brief vx (VX Apps) namespace.
  */
-namespace VX {
+namespace vx {
 
   /**
    * @brief User interface for video stream.

@@ -31,9 +31,9 @@
 #pragma once
 
 /**
- * @brief VX (VX Apps) Namespace.
+ * @brief vx (VX Apps) namespace.
  */
-namespace VX {
+namespace vx {
 
   /* local class */
   class PatternMatching;

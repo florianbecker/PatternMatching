@@ -36,7 +36,6 @@
 #pragma clang diagnostic ignored "-Weverything"
 #include <pylon/PylonIncludes.h>
 #include <pylon/BaslerUniversalInstantCamera.h>
-using namespace Basler_UniversalCameraParams;
 #pragma clang diagnostic pop
 
 /* qt header */
@@ -50,7 +49,10 @@ using namespace Basler_UniversalCameraParams;
 #include "PatternMatching.h"
 #include "Timer.h"
 
-namespace VX {
+/* basler namespace */
+using namespace Basler_UniversalCameraParams;
+
+namespace vx {
 
   /** Number of images to be grabbed. 0 is inifinity. */
   constexpr int countOfImagesToGrab = 0;
@@ -170,7 +172,7 @@ namespace VX {
 
     int fps = 0;
     Timer fpsTimer = Timer();
-    fpsTimer.setInterval( [&]() {
+    fpsTimer.setInterval( [&fps]() {
 
       std::cout << "Frames per seconds: " << fps << std::endl;
       fps = 0;

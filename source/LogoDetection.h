@@ -35,9 +35,9 @@
 #include <opencv2/xfeatures2d/nonfree.hpp>
 
 /**
- * @brief VX (VX Apps) Namespace.
+ * @brief vx (VX Apps) namespace.
  */
-namespace VX {
+namespace vx {
 
   /**
    * @brief Detecting logo.
@@ -51,7 +51,7 @@ namespace VX {
      * @param _logo Logo processing always the same.
      * @note USE GRAY IMAGE
      */
-    LogoDetection( cv::Mat _logo );
+    explicit LogoDetection( cv::Mat _logo );
 
     /**
      * @brief Detect the logo.
@@ -95,6 +95,6 @@ namespace VX {
      * @param _q2   Query point 2.
      * @return True, if the points are intersecting - otherweise false.
      */
-    bool isIntersecting( cv::Point2f &_p1, cv::Point2f &_p2, cv::Point2f &_q1, cv::Point2f &_q2 ) const;
+    bool isIntersecting( const cv::Point2f &_p1, const cv::Point2f &_p2, const cv::Point2f &_q1, const cv::Point2f &_q2 ) const;
   };
 }

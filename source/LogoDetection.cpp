@@ -34,16 +34,16 @@
 /* open cv header */
 #include <opencv2/xfeatures2d.hpp>
 
-namespace VX {
+namespace vx {
 
   /** Hessian threshold */
   const int hessianThreshold = 600;
 
   /**
    * Ratio threshold
-   * @note 0.7f better results, 0.8f more false/positive, but even more perfect matches
+   * @note 0.7f better results, 0.8F more false/positive, but even more perfect matches
    */
-  const float ratioThreshold = 0.7f;
+  const float ratioThreshold = 0.7F;
 
   LogoDetection::LogoDetection( cv::Mat _logo )
     : m_logo( std::move( _logo ) ) {
@@ -142,7 +142,7 @@ namespace VX {
     return cv::boundingRect( sceneCorners );
   }
 
-  bool LogoDetection::isIntersecting( cv::Point2f &_p1, cv::Point2f &_p2, cv::Point2f &_q1, cv::Point2f &_q2 ) const {
+  bool LogoDetection::isIntersecting( const cv::Point2f &_p1, const cv::Point2f &_p2, const cv::Point2f &_q1, const cv::Point2f &_q2 ) const {
 
     return ( ( ( _q1.x - _p1.x ) * ( _p2.y - _p1.y ) - ( _q1.y - _p1.y ) * ( _p2.x - _p1.x ) )
              * ( ( _q2.x - _p1.x ) * ( _p2.y - _p1.y ) - ( _q2.y - _p1.y ) * ( _p2.x - _p1.x ) ) < 0 )

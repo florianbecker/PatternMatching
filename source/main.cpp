@@ -44,10 +44,10 @@ int main( int argc, char **argv ) {
   QApplication::setOrganizationName( QStringLiteral( "VX Apps" ) );
   QApplication::setOrganizationDomain( QStringLiteral( "https://vxapps.com" ) );
 
-  VX::PatternMatching *patternMatching = new VX::PatternMatching;
+  vx::PatternMatching *patternMatching = new vx::PatternMatching;
   QApplication::processEvents();
 
-  VX::Camera camera( patternMatching );
+  vx::Camera camera( patternMatching );
   delete patternMatching;
 
   return QApplication::exec();

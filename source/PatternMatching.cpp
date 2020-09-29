@@ -38,7 +38,7 @@
 /* locl haeder */
 #include "PatternMatching.h"
 
-namespace VX {
+namespace vx {
 
   PatternMatching::PatternMatching( QWidget *parent )
     : QWidget( parent ) {
