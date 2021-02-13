@@ -1,46 +1,32 @@
-#############################################################################
-#
-# ViSP, open source Visual Servoing Platform software.
-# Copyright (C) 2005 - 2019 by Inria. All rights reserved.
-#
-# This software is free software; you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation; either version 2 of the License, or
-# (at your option) any later version.
-# See the file LICENSE.txt at the root directory of this source
-# distribution for additional information about the GNU GPL.
-#
-# For using ViSP with software that can not be combined with the GNU
-# GPL, please contact Inria about acquiring a ViSP Professional
-# Edition License.
-#
-# See http://visp.inria.fr for more information.
-#
-# This software was developed at:
-# Inria Rennes - Bretagne Atlantique
-# Campus Universitaire de Beaulieu
-# 35042 Rennes Cedex
-# France
-#
-# If you have questions regarding the use of this file, please contact
-# Inria at visp@inria.fr
-#
-# This file is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE
-# WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
-#
-# Description:
-# Try to find Basler Pylon library API
-#
-# PYLON_FOUND
-# PYLON_INCLUDE_DIRS
-# PYLON_LIBRARIES
-# PYLON_VERSION
-#
-# Authors:
-# Wenfeng CAI
-# Fabien Spindler : compat with OSX and Windows
-#
-#############################################################################
+#/*
+# * Copyright (c) 2020 Florian Becker <fb@vxapps.com> (VX APPS).
+# * All rights reserved.
+# *
+# * Redistribution and use in source and binary forms, with or without
+# * modification, are permitted provided that the following conditions are met:
+# *
+# * 1. Redistributions of source code must retain the above copyright notice, this
+# *    list of conditions and the following disclaimer.
+# *
+# * 2. Redistributions in binary form must reproduce the above copyright notice,
+# *    this list of conditions and the following disclaimer in the documentation
+# *    and/or other materials provided with the distribution.
+# *
+# * 3. Neither the name of the copyright holder nor the names of its
+# *    contributors may be used to endorse or promote products derived from
+# *    this software without specific prior written permission.
+# *
+# * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+# * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+# * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+# * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+# * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+# * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+# * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+# * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+# * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+# * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+# */
 
 if(APPLE)
   find_path(PYLON_INCLUDE_DIR pylon/PylonIncludes.h)

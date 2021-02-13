@@ -48,4 +48,4 @@ add_executable(${PROJECT_NAME}
   Timer.h
 )
 
-target_link_libraries(${PROJECT_NAME} PRIVATE ${OpenCV_LIBS} ${PYLON_LIBRARIES} Qt5::Widgets Threads::Threads)
+target_link_libraries(${PROJECT_NAME} PRIVATE ${OpenCV_LIBS} ${PYLON_LIBRARIES} ${QtVERSION}::Widgets Threads::Threads)

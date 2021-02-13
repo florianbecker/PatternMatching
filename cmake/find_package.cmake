@@ -30,5 +30,5 @@
 
 find_package(OpenCV REQUIRED)
 find_package(Pylon REQUIRED)
-find_package(Qt5 COMPONENTS Widgets REQUIRED)
+find_package(${QtVERSION} COMPONENTS Widgets REQUIRED)
 find_package(Threads REQUIRED)
